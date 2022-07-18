@@ -1,0 +1,35 @@
+@import '@assets/css/mixin';
+
+.common-header {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  padding: 0 27px;
+  color: #F4F2FF;
+  align-items: center;
+  border-bottom: 1px solid#2E3974;
+  background: rgba(16, 23, 53, 0.4);
+
+  .common-logo {
+    width: 180px;
+    height: 32.05px;
+    @include backgroundBase('../../../assets/image/logo.svg');
+  }
+
+  .common-header-actions {
+    display: flex;
+    height: 100%;
+
+    .common-header-button {
+      font-size: 23px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      padding: 8px;
+      height: 100%;
+    }
+  }
+}

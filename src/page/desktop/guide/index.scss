@@ -1,0 +1,425 @@
+@import "@assets/css/mixin";
+@import "@assets/css/variables"; //基础css
+
+.guide {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .guide-main {
+    padding: 60px 92px;
+    width: 954px;
+    height: 600px;
+    background: #1C275E;
+    mix-blend-mode: normal;
+    box-shadow: 0px 1px 0px $defaultColor;
+    backdrop-filter: blur(100px);
+    border-radius: 20px;
+    overflow: hidden;
+
+    .guide-footer {
+      width: 468px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+
+      .button-common {
+        width: 224px;
+      }
+    }
+
+    .step1 {
+      .step1-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 2px;
+        color: #FFFFFF;
+        line-height: 30px;
+      }
+
+      .step1-tip {
+        margin-top: 30px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 1px;
+        color: #C5CFF2;
+      }
+
+      .step1-logo {
+        width: 237px;
+        height: 56.43px;
+        margin: auto;
+        margin-top: 21.92px;
+        @include backgroundBase('../../../assets/image/logo.svg');
+      }
+
+      .step1-title1 {
+        margin-top: 106px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 25px;
+        color: #FFFFFF;
+        text-align: center;
+      }
+
+      .step1-swiper {
+        width: 500px;
+        height: 48px;
+        margin: auto;
+        margin-top: 34px;
+
+        .swiper-button-prev,
+        .swiper-button-next {
+          color: #FFFFFF;
+        }
+
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+          font-size: 16px;
+        }
+      }
+
+      .step1-button {
+        width: 224px;
+        margin: auto;
+        margin-top: 62px;
+      }
+
+      .step1-item {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .step1-item-icon {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-right: 42px;
+          font-size: 35px;
+        }
+
+        .step1-item-explain {
+          width: 228px;
+          line-height: 22px;
+          text-align: left;
+        }
+      }
+    }
+
+    .step2 {
+      display: flex;
+      flex-flow: column; //垂直排列
+      height: 100%;
+
+      .step2-content {
+        flex: 1
+      }
+
+      .step2-title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        width: 198px;
+        margin: auto;
+      }
+
+      .step2-explain {
+        margin-top: 12px;
+        margin-bottom: 82px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        color: #C5CFF2;
+      }
+
+      .step2-hotkey {
+        width: 468px;
+        margin: auto;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+
+        .step2-hotkey-title {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .step2-hotkey-key {
+          width: 136px;
+          padding: 8px 5px;
+          font-size: 16px;
+          background: #161F4D;
+          box-shadow: inset 1px 1px 10px 2px #101945;
+          border-radius: 8px;
+          color: #495CB7;
+        }
+      }
+
+
+    }
+
+    .step3 {
+      display: flex;
+      flex-flow: column; //垂直排列
+      height: 100%;
+
+      .step3-content {
+        flex: 1
+      }
+
+      .step3-title {
+        font-size: 20px;
+        line-height: 40px;
+        text-align: center;
+      }
+
+      .step3-explain {
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 42px;
+        color: #C5CFF2;
+      }
+
+      .step3-item {
+        margin: auto;
+        margin-bottom: 24px;
+        width: 466px;
+        height: 80px;
+        border: 1px solid #6277BD;
+        box-sizing: border-box;
+        box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 27px 29px;
+        cursor: pointer;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.3);
+          color: #FFFFFF;
+
+          .step3-icon {
+            color: $defaultColor;
+          }
+
+          .step3-item-name {
+            color: #FFFFFF
+          }
+        }
+
+        .step3-icon {
+          color: $defaultColor;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 30px;
+          font-size: 30px;
+        }
+
+        .step3-item-name {
+          padding: 0 29px;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 24px;
+          text-align: left;
+          color: #FFFFFF;
+          flex: 1
+        }
+
+        .step3-item-fps {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: center;
+          color: #C5CFF2;
+        }
+      }
+
+      .step3-item-active {
+        background: #FFFFFF;
+        border: 1px solid #CECDCD;
+        color: #2D2D33;
+
+        .step3-icon {
+          color: #2E3974;
+        }
+
+        .step3-item-name {
+          color: #2E3974;
+        }
+      }
+    }
+
+    .step4 {
+      display: flex;
+      flex-flow: column; //垂直排列
+      height: 100%;
+
+      .step4-content {
+        flex: 1
+      }
+
+      .step4-title {
+        font-size: 20px;
+        line-height: 40px;
+        text-align: center;
+      }
+
+      .step4-explain {
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 42px;
+        color: #C5CFF2;
+        width: 452px;
+        margin: auto;
+        margin-bottom: 54px;
+      }
+
+      .step4-item {
+        width: 564px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+
+        .step4-item-title {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: left;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 24px;
+        }
+
+        .step4-item-path {
+          font-size: 14px;
+          line-height: 18px;
+          color: #6277BD;
+        }
+
+        .step4-item-secs {
+          color: #CECDCD;
+          font-size: 14px;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .step5 {
+      display: flex;
+      flex-flow: column; //垂直排列
+      height: 100%;
+
+      .step5-content {
+        flex: 1;
+
+        .step5-content-qrcode {
+          display: block;
+          height: 240px;
+          width: 240px;
+          margin: auto;
+        }
+      }
+
+      .step5-title {
+        font-size: 20px;
+        line-height: 40px;
+        text-align: center;
+      }
+
+      .step5-explain {
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 42px;
+        color: #C5CFF2;
+      }
+
+      .step5-skip {
+        position: absolute;
+        top: 21px;
+        right: 40px;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        text-decoration-line: underline;
+        color: #8EA7FF;
+        cursor: pointer;
+      }
+
+      .step5-info {
+        margin-left: 10px;
+      }
+    }
+
+    .step6 {
+      display: flex;
+      flex-flow: column; //垂直排列
+      height: 100%;
+
+      .step6-content {
+        flex: 1;
+        display: flex;
+        flex-flow: column; //垂直排列
+      }
+
+      .step6-title {
+        font-size: 20px;
+        line-height: 40px;
+        height: 40px;
+        text-align: center;
+      }
+
+      .step6-explain {
+        font-size: 18px;
+        line-height: 24px;
+        height: 24px;
+        text-align: center;
+        color: #C5CFF2;
+      }
+
+      .step6-img {
+        flex: 1;
+        margin: 12px;
+        @include backgroundBase('../../../assets/image/setupComplete.png');
+
+      }
+
+      .guide-footer {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.step5-explain-info {
+  padding: 7px 13px;
+  font-size: 12px;
+  line-height: 18px;
+}

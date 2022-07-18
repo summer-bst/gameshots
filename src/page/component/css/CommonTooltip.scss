@@ -1,0 +1,32 @@
+.common-tooltip {
+  z-index: 1000;
+
+  &.rc-tooltip {
+    opacity: 1;
+  }
+
+  .rc-tooltip-content {
+    border-radius: 4px;
+
+    .rc-tooltip-arrow {
+      display: none;
+    }
+
+    .rc-tooltip-inner {
+      border: none;
+      color: #FFFFFF;
+      background: #2E3974;
+      position: relative;
+      padding: 0 15px;
+      border-radius: 4px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.common-tooltip-item {
+  display: inline-block;
+}

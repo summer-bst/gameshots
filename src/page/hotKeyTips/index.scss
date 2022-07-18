@@ -1,0 +1,70 @@
+@import "@assets/css/base"; //基础css
+
+body {
+  background-color: transparent;
+}
+
+.hot-key-tips {
+  width: 456px;
+  height: 154px;
+  background: #1C275D;
+  box-shadow: -1px 0px 0px 0.5px #F5B83B;
+  border-radius: 8px;
+  color: #FFFFFF;
+  padding: 0;
+  position: relative;
+  user-select: none;
+
+  .hot-key-tips-main {
+    display: flex;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    .hot-key-tips-logo {
+      display: flex;
+      width: 88px;
+      justify-content: center;
+      align-items: center;
+      background: #141937;
+    }
+
+    .hot-key-tips-r {
+      box-sizing: border-box;
+      padding: 0 26px 0 20px;
+      flex: 1;
+
+      .hot-key-tips-title {
+        margin: 18px 0 12px 0;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 32px;
+      }
+
+      .hot-key-tips-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #C5CFF2;
+
+        .hot-key-tips-item-title {
+          max-width: 147px;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+
+        .hot-key-tips-bind {
+          padding: 4px 27px;
+          background: #161F4D;
+          box-shadow: inset 1px 1px 10px 2px #101945;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import '@assets/css/variables';
+
+.search-input-common {
+  height: 42px;
+  width: 252px;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: #FFFFFF;
+  position: relative;
+
+  &.search-input-active {
+    border-color: $defaultColor;
+  }
+
+  .search-input-close {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  input {
+    width: 100px;
+    margin-left: 10px;
+    flex: 1;
+    background: none;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+  }
+}

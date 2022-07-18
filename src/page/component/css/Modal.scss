@@ -1,0 +1,46 @@
+.modal-common {
+  user-select: none;
+
+  .ant-modal-close {
+    top: 4px;
+  }
+
+  .ant-modal-close-x {
+    color: #fff;
+
+  }
+
+  .ant-modal-content {
+    background: #1C275D;
+    box-shadow: 0px 1px 0px #F5B83B;
+    border-radius: 8px;
+    color: #fff;
+  }
+
+  &-title {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  &-content {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 15px 0;
+    color: #C5CFF2;
+  }
+
+  &-footer {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .modal-common-kong {
+      width: 20px;
+    }
+
+    .button-common {
+      flex: 1;
+    }
+  }
+}

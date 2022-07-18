@@ -1,0 +1,29 @@
+.horizontal-mnenu {
+  height: 30px;
+  display: flex;
+  align-items: center;
+
+  .horizontal-tab {
+    text-align: center;
+    font-size: 18px;
+    color: #8181AD;
+    margin-right: 32px;
+    cursor: pointer;
+    position: relative;
+
+    .horizontal-tab-border {
+      width: calc(100% - 16px);
+      margin: auto;
+      height: 2px;
+      margin-top: 12px;
+    }
+  }
+
+  .horizontal-tab-active {
+    color: #ffffff;
+
+    .horizontal-tab-border {
+      background-color: #FFCC48;
+    }
+  }
+}

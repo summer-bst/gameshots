@@ -1,0 +1,42 @@
+@import "@assets/css/base"; //基础css
+
+body {
+  background-color: transparent;
+}
+
+.message-tips {
+  position: relative;
+  width: 260px;
+  height: 68px;
+  background: #1C275D;
+  box-shadow: -1px 0px 0px 0.5px #F5B83B;
+  border-radius: 8px;
+  color: #FFFFFF;
+  user-select: none;
+  font-size: 18px;
+
+  .message-tips-main {
+    display: flex;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .message-tips-logo {
+    display: flex;
+    width: 68px;
+    justify-content: center;
+    align-items: center;
+    background: #141937;
+  }
+
+  .message-tips-r {
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

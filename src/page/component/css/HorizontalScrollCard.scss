@@ -1,0 +1,26 @@
+.horizontal-scroll-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  .horizontal-scroll-main {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+
+    .horizontal-scroll-body {
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      height: 100%;
+
+      .horizontal-scroll-item {
+        display: inline-block;
+        overflow: hidden;
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+.message-common {
+  position: fixed;
+  z-index: 1000;
+  bottom: 120px;
+  width: 100%;
+  color: #ffffff;
+  font-size: 16px;
+  pointer-events: none;
+  user-select: none;
+
+  &-success {
+
+    &-notice {
+      text-align: center;
+
+      &-content {
+        padding: 0 15px;
+        line-height: 16px;
+        display: inline-block;
+        background: #112F10;
+        border: 1px solid #229D58;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin: 8px 0;
+      }
+
+      .message-common-icon {
+        color: #229D58;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &-error {
+
+    &-notice {
+      text-align: center;
+
+      &-content {
+        color: #E47C00;
+        padding: 0 15px;
+        display: inline-block;
+        background: #342818;
+        border: 1px solid #E47C00;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin: 8px 0;
+      }
+
+      .message-common-icon {
+        color: #E47C00;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+  }
+
+  .fade-effect {
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+  }
+
+  &-fade-appear,
+  &-fade-enter {
+    opacity: 0;
+    @extend .fade-effect;
+    animation-play-state: paused;
+  }
+
+  &-fade-leave {
+    @extend .fade-effect;
+    animation-play-state: paused;
+  }
+
+  &-fade-appear,
+  &-fade-appear-active,
+  &-fade-enter,
+  &-fade-enter-active {
+    animation-name: rcNotificationFadeIn;
+    animation-play-state: running;
+  }
+
+  &-fade-leave,
+  &-fade-leave-active {
+    animation-name: rcDialogFadeOut;
+    animation-play-state: running;
+  }
+
+  @keyframes rcNotificationFadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes rcDialogFadeOut {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+}

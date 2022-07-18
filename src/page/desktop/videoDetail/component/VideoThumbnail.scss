@@ -1,0 +1,30 @@
+@import '@assets/css/mixin';
+
+.video-thumbnail {
+  height: 48px;
+  width: 100%;
+  border-radius: 4.69348px;
+  overflow: hidden;
+  position: relative;
+
+  .video-thumbnail-item {
+    position: relative;
+    width: 77.61px;
+    height: 47.94px;
+    overflow: hidden;
+  }
+
+  .video-thumbnail-active {
+    @include backgroundBase('../../../../assets/image/activeThumbnail.svg');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  video {
+    width: 77.61px;
+    height: 47.94px;
+    cursor: pointer;
+    // display: none;
+  }
+}

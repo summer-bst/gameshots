@@ -1,0 +1,161 @@
+@import "@assets/css/base"; //基础css
+@import "@assets/css/variables"; //基础css
+
+.desktop-lottie-player {
+  @include backgroundBase('../image/background.png');
+  position: absolute;
+  background-color: #101735;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.desktop {
+  @include backgroundBase('../image/background.png');
+  background-color: #101735;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 1439px) {
+    zoom: calc(1280 / 1440)
+  }
+
+  .desktop-update {
+    .rc-tooltip-content {
+      border-radius: 4px;
+
+      .rc-tooltip-arrow {
+        border-right-color: #229D58;
+      }
+
+      .rc-tooltip-inner {
+        background-color: #229D58;
+        color: #FFFFFF;
+        border: none;
+        padding: 11px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+      }
+    }
+
+    .desktop-download {
+      margin-right: 8px;
+    }
+
+  }
+
+  .desktop-content {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+
+    .desktop-left {
+      width: 76px;
+      height: 100%;
+      background: #1C275D;
+
+      .common-tooltip-item {
+        display: block;
+      }
+
+      .desktop-item {
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        font-size: 32px;
+        padding: 24px 0;
+        color: #ffffff;
+
+        .desktop-item-update {
+          position: absolute;
+          bottom: 5px;
+          right: 22px;
+          height: 10px;
+          width: 10px;
+          border-radius: 50% 50%;
+          background-color: #00C300;
+        }
+
+        .desktop-item-main {
+          height: 100%;
+          width: 100%;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+        }
+
+        .desktop-item-boder {
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 3px;
+          background: $active-color;
+          border-radius: 0px 4px 4px 0px;
+          display: none;
+        }
+
+        &:hover {
+          color: $active-color;
+        }
+      }
+
+      .desktop-active {
+        .desktop-item {
+          color: $active-color;
+
+          .desktop-item-boder {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .desktop-right {
+      flex: 1;
+      position: relative;
+    }
+  }
+}
+
+.ant-input {
+  height: 48px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: none;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.ant-modal-mask {
+  background: rgba(7, 11, 45, 0.7);
+  backdrop-filter: blur(12px);
+}
+
+::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 10px;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 12px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #273475;
+}

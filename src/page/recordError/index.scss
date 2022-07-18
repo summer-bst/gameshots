@@ -1,0 +1,56 @@
+@import "@assets/css/base"; //基础css
+
+body {
+  background-color: transparent;
+}
+
+.record-error {
+  position: relative;
+  width: 472px;
+  height: 112px;
+  background: #1C275D;
+  box-shadow: -1px 0px 0px 0.5px #F5B83B;
+  border-radius: 8px;
+  color: #FFFFFF;
+  user-select: none;
+  font-size: 18px;
+
+  .record-error-main {
+    display: flex;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .record-error-logo {
+    display: flex;
+    width: 88px;
+    justify-content: center;
+    align-items: center;
+    background: #141937;
+  }
+
+  .record-error-r {
+    box-sizing: border-box;
+    flex: 1;
+    padding: 0 26px 0 20px;
+  }
+
+  .record-error-title {
+    margin: 18px 0 12px 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .record-error-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #C5CFF2;
+  }
+}

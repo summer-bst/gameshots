@@ -1,0 +1,39 @@
+{
+    "logchat": {
+        "entry": "./src/page/logchat/index.tsx",
+        "template": "public/index.html",
+        "title": "日志模块",
+        "inject": "body",
+        "isDevelopment": true
+    },
+    "message": {
+        "entry": "./src/page/message/index.tsx",
+        "template": "public/index.html",
+        "title": "消息模块",
+        "inject": "body"
+    },
+    "hotKeyTips": {
+        "entry": "./src/page/hotKeyTips/index.tsx",
+        "template": "public/index.html",
+        "title": "提示块",
+        "inject": "body"
+    },
+    "recordError": {
+        "entry": "./src/page/recordError/index.tsx",
+        "template": "public/index.html",
+        "title": "录制失败提示块",
+        "inject": "body"
+    },
+    "desktop": {
+        "entry": "./src/page/desktop/index.tsx",
+        "template": "public/index.html",
+        "title": "桌面模块",
+        "inject": "body"
+    },
+    "background": {
+        "entry": "./src/page/background/index.ts",
+        "template": "public/index.html",
+        "title": "初始化静默模块",
+        "inject": "body"
+    }
+}

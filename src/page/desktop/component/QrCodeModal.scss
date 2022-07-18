@@ -1,0 +1,84 @@
+@import '@assets/css/mixin';
+
+.qr-code-modal-title {
+  display: flex;
+  align-items: center;
+
+  .qr-code-modal-logo {
+    @include backgroundBase('../../../assets/image/logo.png');
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+.qr-code-modal-link {
+  height: 492px;
+  display: flex;
+
+  .qr-code-modal-link-l {
+    height: 100%;
+    width: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include backgroundBase('../../../assets/image/nodata.png');
+
+  }
+
+  .qr-code-modal-link-r {
+    width: calc(100% - 490px);
+    height: 100%;
+    background: #2E3974;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .qr-code-modal-text {
+      padding: 0 15px;
+      text-align: center;
+    }
+
+    .qr-code-modal-link-qrcode {
+      margin-bottom: 57px;
+      height: 240px;
+      width: 240px;
+
+    }
+
+    .qr-code-modal-link-explain {
+      font-size: 20px;
+      text-align: center;
+      padding: 0 55px;
+      color: #ffffff;
+      margin-bottom: 37px;
+    }
+
+    .qr-code-modal-link-install {
+      color: #ffffff;
+      margin-left: 10px;
+      border-bottom: 1px solid #ffffff;
+      cursor: pointer;
+    }
+  }
+}
+
+.qr-code-modal-explain {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 4px;
+  padding: 7px 13px;
+  font-size: 12px;
+  line-height: 18px;
+  width: 200px;
+  background-color: #384985;
+}
+
+.qr-code-modal-info {
+  margin-left: 5px;
+}

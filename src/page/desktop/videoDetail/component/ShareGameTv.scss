@@ -1,0 +1,201 @@
+@import '@assets/css/mixin';
+
+.share-gametv-title {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+
+  .share-gametv-logo {
+    @include backgroundBase('../../../../assets/image/logo.png');
+    height: 32px;
+    width: 32px;
+    margin-right: 8px;
+
+  }
+}
+
+.share-gametv-loading {
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.share-gametv-main {
+  color: #FFFFFF;
+
+  .share-gametv-username {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 27px;
+    width: 100%;
+
+    .share-gametv-usernlogo {
+      height: 40px;
+      width: 40px;
+      margin-right: 12px;
+    }
+  }
+
+  .share-gametv-content {
+    display: flex;
+
+    .share-gametv-content-l {
+      width: 464px;
+      padding-right: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .ant-select-selection-placeholder {
+        color: #8EA7FF;
+      }
+
+      .ant-select {
+        width: 100%;
+
+        &:not(.ant-select-customize-input) .ant-select-selector {
+          background-color: transparent;
+          border: 1px solid #FFFFFF;
+          box-sizing: border-box;
+          border-radius: 8px;
+        }
+      }
+
+      .ant-select-multiple {
+        .ant-select-selection-search {
+          margin: 0;
+        }
+
+        .ant-select-selection-item {
+          background: #2E3974;
+          border-radius: 4px;
+          border: none;
+          color: #8EA7FF;
+        }
+
+        .ant-select-selection-item-remove {
+          color: #FFFFFF;
+        }
+
+        .ant-select-selection-item-content {
+          line-height: 1.5;
+        }
+      }
+    }
+
+    .share-gametv-content-r {
+      flex: 1;
+    }
+
+    input,
+    textarea {
+      background: none;
+      border: none;
+      outline: none;
+      width: 100%;
+      color: #FFFFFF;
+      border-radius: 8px;
+      border: 1px solid #FFFFFF;
+      font-size: 16px;
+      height: 48px;
+      font-size: 14px;
+      padding: 13px;
+      box-sizing: border-box;
+      margin-bottom: 16px;
+
+      &::placeholder {
+
+        color: #8EA7FF;
+      }
+    }
+
+    textarea {
+      height: 130px;
+      resize: none
+    }
+
+    .share-gametv-club {
+      font-size: 14px;
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: space-between;
+      color: #FFFFFF;
+      width: 100%;
+      margin-top: 12px;
+
+      .share-gametv-select {
+        width: 220px;
+
+        .share-gametv-select-i {
+          width: 180px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          color: #FFFFFF;
+
+          img {
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+          }
+        }
+
+        .select-common {
+          &:not(.ant-select-customize-input) {
+            .ant-select-selector {
+              background-color: #2E3974;
+            }
+          }
+        }
+      }
+    }
+
+    .share-gametv-tip {
+      font-size: 12px;
+      color: #FFAB00;
+    }
+
+    .share-gametv-thumbnail {
+      height: 232px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .share-gametv-selectthumbnail {
+      font-size: 14px;
+      padding: 16px 0 8px 0;
+    }
+  }
+
+  .share-gametv-process-text {
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 70px 0 20px 0;
+  }
+
+
+}
+
+.share-gametv-modal {
+  .modal-common-footer {
+    justify-content: center;
+  }
+
+  .button-common {
+    max-width: 224px;
+  }
+}
+
+.share-gametv-tip-modal {
+  .button-common {
+    max-width: 50%;
+    float: right;
+  }
+}
